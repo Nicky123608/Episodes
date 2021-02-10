@@ -6,7 +6,7 @@ TWITCH_PORT = 6667
 class TwitchBot
 
   def initialize
-    @nickname = "AlwaysBotCoding"
+    @nickname = "NikiBOT"
     @password = "oauth:jatx00edq9zqsqqk2nyfm53xrfawz2"
     @channel = "alwaysbcoding"
     @socket = TCPSocket.open(TWITCH_HOST, TWITCH_PORT)
