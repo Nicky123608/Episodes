@@ -6,7 +6,7 @@ TWITCH_PORT = 6667
 class TwitchBot
 
   def initialize
-    @nickname = "AlwaysBotCoding"
+    @nickname = "NikiBOT"
     @password = "oauth:jatx00edq9zqsqqk2nyfm53xrfawz2"
     @channel = "alwaysbcoding"
     @socket = TCPSocket.open(TWITCH_HOST, TWITCH_PORT)
@@ -37,8 +37,8 @@ class TwitchBot
 
       if message.match(/PRIVMSG ##{@channel} :(.*)$/)
         content = $~[1]
-        username = message.match(/@(.*).tmi.twitch.tv/)[1]
-
+        username = message.match(/@(.*).tmi.twitch.tv/)[1]      
+      
         # if content.include? "coffee"
         #   write_to_chat("PUT THAT COFFEE DOWN!!")
         # end
